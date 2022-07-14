@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import MovieList from "./MovieList";
+import Search from "./Search";
 
 const Home = () => {
-    const url = "http://www.omdbapi.com/?s=indiana jones&apikey=18cc820a";
     const [movies, setMovies] = useState([]);
     const [error, setError] = useState(null);
+    const [searchValue, setSearchValue] = useState("");
+
+    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=18cc820a`
 
     useEffect(() => {
         fetch(url)
@@ -20,10 +23,11 @@ const Home = () => {
             .catch(error => {
                 setError(error.message);
             })
-    }, []);
-    
+    }, [url, searchValue]);
+
     return (
         <div className="home">
+            <Search setSearchValue={setSearchValue} />
             {error && <div>{error}</div>}
             {movies && <MovieList movies={movies} />}
         </div>
