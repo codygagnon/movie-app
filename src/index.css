@@ -5,37 +5,55 @@
   margin: 0;
   font-family: "Lato";
   color: #000;
+  background-color: #1F405A;
 }
 
 /* navbar styles */
 .navbar {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   display: flex;
   justify-content: center;
-  border: 10px solid #EF2912;
-  background-color: #FFF;
 }
 .navbar h1 {
-  color: #E7B717;
+  color: #DEB841;
   text-shadow: 1px 1px #808080;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 /* search styles */
 .search {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
 }
 
 .search input {
+  background-color: #E5EAFA;
   font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  max-width: 800px;
+  flex-grow: 1;
 }
 
 /* movie-list styles */
 .movie-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* movie styles */
+.movie {
+  background-color: #DEB841;
+  padding: 10px;
+  max-width: 300px;
+}
+
+.movie h3 {
+  background-color: #DEB841;
 }
