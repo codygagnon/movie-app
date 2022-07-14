@@ -7,7 +7,7 @@ const Search = ({setSearchValue, handleSearch}) => {
             placeholder="Enter a movie title"
             onChange={event => {setSearchValue(event.target.value)}} 
             onKeyUp={handleSearch}
-        />
+            />
         </div>
     );
 }

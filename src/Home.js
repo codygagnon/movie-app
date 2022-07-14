@@ -6,7 +6,6 @@ const Home = () => {
     const [movies, setMovies] = useState([]);
     const [error, setError] = useState(null);
     const [searchValue, setSearchValue] = useState("");
-
     const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=18cc820a`
 
     useEffect(() => {
