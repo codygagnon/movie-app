@@ -6,6 +6,8 @@
   font-family: "Lato";
   color: #000;
 }
+
+/* navbar styles */
 .navbar {
   padding: 20px;
   display: flex;
@@ -19,4 +21,10 @@
   text-shadow: 1px 1px #808080;
   font-size: 40px;
   font-weight: 700;
+}
+
+/* movie-list styles */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
 }
