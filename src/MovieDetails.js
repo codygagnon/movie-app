@@ -8,7 +8,7 @@ const MovieDetails = () => {
     }
     
     return (
-        <div>
+        <div className="movie-details">
             <p>Movie details will appear here in the near future!</p>
             <button onClick={handleClick}>Back</button>
         </div>

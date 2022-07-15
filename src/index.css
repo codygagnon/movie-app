@@ -57,3 +57,21 @@
 .movie h3 {
   background-color: #DEB841;
 }
+
+/* movie-details styles */
+.movie-details {
+  margin: 20px;
+}
+
+.movie-details p {
+  color: #E5EAFA;
+}
+
+.movie-details button {
+  margin: 20px 0px;
+  padding: 10px;
+  color: #000;
+  font-weight: 700;
+  background-color: #DEB841;
+  border-color: #DEB841;
+}
